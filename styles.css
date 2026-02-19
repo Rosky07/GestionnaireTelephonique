@@ -1,0 +1,382 @@
+/* Tableau membres adapté */
+.membres-bg .table {
+    background: transparent;
+    color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.membres-bg th, .membres-bg td {
+    vertical-align: middle !important;
+    text-align: center;
+    font-size: 1rem;
+}
+.membres-bg td img {
+    border-radius: 50%;
+    border: 2px solid #5ee7df;
+    box-shadow: 0 2px 8px rgba(94,231,223,0.15);
+}
+.membres-bg .btn-info, .membres-bg .btn-danger {
+    min-width: 90px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+}
+.membres-bg .btn-info i, .membres-bg .btn-danger i {
+    font-size: 1.1em;
+}
+.membres-bg .table-responsive {
+    border-radius: 16px;
+    overflow-x: auto;
+    background: rgba(27,38,59,0.85);
+    box-shadow: 0 2px 16px 0 rgba(13, 110, 253, 0.10);
+    padding: 1rem;
+}
+/* Fond spécifique pour la page membres */
+.membres-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #232b3e 0%, #3a506b 100%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.membres-bg .futur-title,
+.membres-bg th,
+.membres-bg td,
+.membres-bg .table-info {
+    color: #fff !important;
+}
+
+.membres-bg .table-info {
+    background: #1b263b !important;
+    border-color: #415a77 !important;
+}
+
+.membres-bg .table-bordered {
+    border-color: #415a77 !important;
+}
+
+.membres-bg .btn-info {
+    background: linear-gradient(90deg, #5ee7df 0%, #0d6efd 100%);
+    color: #fff;
+    border: none;
+}
+.membres-bg .btn-info:hover {
+    background: linear-gradient(90deg, #0d6efd 0%, #5ee7df 100%);
+    color: #fff;
+}
+.membres-bg .btn-danger {
+    border: none;
+}
+/* Footer Modernisé */
+.footer-main {
+    background: linear-gradient(90deg, #0d6efd 0%, #5ee7df 100%);
+    color: #fff;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 -2px 16px 0 rgba(13, 110, 253, 0.10);
+}
+.footer-main a {
+    color: #fff;
+    transition: color 0.2s;
+}
+.footer-main a:hover, .footer-main a:focus {
+    color: #ffe082;
+    text-decoration: none;
+}
+.footer-main .footer-brand {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+/* Header Hero Modernisé */
+.header-hero {
+    background: linear-gradient(90deg, #0d6efd 0%, #5ee7df 100%);
+    box-shadow: 0 4px 24px 0 rgba(13, 110, 253, 0.10);
+    border-radius: 0 0 32px 32px;
+    margin-bottom: 2rem;
+}
+.header-hero h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(13,110,253,0.10);
+}
+.header-hero p {
+    color: #eaf6fb;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+body, html {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.main-bg {
+    background: rgba(255,255,255,0.7);
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.futur-fieldset {
+    border: 2px solid #0d6efd;
+    background: #fff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.futur-legend {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0d6efd;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 2px 8px 0 rgba(13, 110, 253, 0.08);
+}
+
+.form-elements label.futur-label {
+    color: #0d6efd;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.form-elements .form-control.futur-input {
+    border-radius: 8px;
+    border: 1.5px solid #b6d0f7;
+    background: #f4f8fb;
+    transition: border-color 0.2s;
+}
+
+.form-elements .form-control.futur-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 2px #b6d0f7;
+    background: #fff;
+}
+
+.futur-btn {
+    background: linear-gradient(90deg, #0d6efd 0%, #5ee7df 100%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(13, 110, 253, 0.10);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.futur-btn:hover, .futur-btn:focus {
+    background: linear-gradient(90deg, #5ee7df 0%, #0d6efd 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px 0 rgba(13, 110, 253, 0.18);
+}
+
+.btn-danger {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.form-group.required label:after {
+    content: ' *';
+    color: #dc3545;
+    font-weight: bold;
+}
+
+::-webkit-input-placeholder { color: #b6b6b6; }
+::-moz-placeholder { color: #b6b6b6; }
+:-ms-input-placeholder { color: #b6b6b6; }
+::placeholder { color: #b6b6b6; }
+body{
+  font-size: 15px;
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px; font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 22px;
+  background: linear-gradient(120deg, #55595b 0%, #64696d 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+nav{
+  height:auto;
+  width: 100%;
+  padding-right: 10px;
+  padding-left:15px;
+  font-size: 15px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+    color: #fff;
+  text-decoration: none;
+  margin-right:40px;
+  /*arrondi les bors*/
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -o-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -ms-border-radius: 6px 6px 6px 6px;
+}
+header{
+  width: 100%;
+  background-color: #7ded95;
+  height: 80px;
+  line-height: 80px;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  clear: both;/*annulle la flotaison*/ 
+  line-height: 50px;
+}
+.connect{
+    border:1px solid gray;
+    padding: 12px 10px 12px 10px;
+    margin-bottom: 12px;
+    padding-left: 50px;
+    /*arrondir les bors*/
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: #9a9494 2px 2px 2px;
+}
+fieldset {
+    border: 1px solid #ddd !important;
+    margin: 0;
+    min-width: 0;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    padding-left: 10px!important;
+}
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid silver;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+
+.form-group.required .control-label:after {
+    content: "*";
+    color: red;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Futuristic Responsive Login Form */
+body {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.login-card {
+    background: rgba(30, 32, 48, 0.95);
+    border: 1.5px solid #0ff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 2rem;
+    max-width: 370px;
+    width: 100%;
+    transition: box-shadow 0.3s;
+}
+
+.login-card:hover {
+    box-shadow: 0 12px 40px 0 rgba(0,255,255,0.2), 0 1.5px 8px 0 #0ff;
+}
+
+.futur-title {
+    color: #0ff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 0 8px #0ff, 0 0 2px #fff;
+}
+
+.futur-fieldset {
+    background: rgba(245, 255, 255, 0.97);
+    border: 2px solid #0ff;
+    box-shadow: 0 4px 24px rgba(0,255,255,0.08);
+    border-radius: 1.5rem;
+}
+
+.futur-legend {
+    color: #0ff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 6px #0ff, 0 0 2px #fff;
+    font-size: 1.2rem;
+}
+
+.futur-label {
+    color: #232526;
+    font-weight: 500;
+}
+
+.futur-input {
+    border: 1.5px solid #0ff;
+    border-radius: 1rem;
+    background: rgba(0,255,255,0.03);
+    color: #232526;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.futur-input:focus {
+    border-color: #0ff;
+    box-shadow: 0 0 8px #0ff;
+    background: rgba(0,255,255,0.08);
+}
+
+.futur-btn {
+    background: linear-gradient(90deg, #0ff 0%, #00f2fe 100%);
+    color: #232526;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(0,255,255,0.12);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.futur-btn:hover, .futur-btn:focus {
+    background: linear-gradient(90deg, #00f2fe 0%, #0ff 100%);
+    color: #232526;
+    box-shadow: 0 4px 16px 0 rgba(0,255,255,0.18);
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 2rem 0.8rem;
+        border-radius: 1rem;
+        max-width: 98vw;
+    }
+    .futur-title {
+        font-size: 1.5rem;
+    }
+}
