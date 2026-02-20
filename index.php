@@ -1,39 +1,66 @@
 <?php
-require_once('connexion.php');
-require_once('queries.php'); // On déplace la logique PHP ici
+require_once('queries.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Connexion Gestionnaire</title>
+    <title>Connexion | Gestionnaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="MDB/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container d-flex align-items-center justify-content-center min-vh-100">
-        <div class="login-card shadow-lg p-4 rounded-4">
+<body class="page-auth">
+    <main class="auth-layout">
+        <section class="login-card shadow-lg">
             <div class="text-center mb-4">
-                <h2 class="futur-title">CONNEXION</h2>
-                <h5 class="text-secondary">Administrateur</h5>
-                <?php if(!empty($erreur)): ?>
-                    <div class="alert alert-danger py-1"><?= $erreur ?></div>
+                <div class="brand-badge mb-3">
+                    <i class="fa-solid fa-address-book"></i>
+                </div>
+                <h1 class="futur-title">Connexion</h1>
+                <p class="text-muted mb-0">Espace administrateur</p>
+                <?php if (!empty($erreur)): ?>
+                    <div class="alert alert-danger mt-3 py-2" role="alert" aria-live="polite">
+                        <?= htmlspecialchars($erreur) ?>
+                    </div>
                 <?php endif; ?>
             </div>
-            <form action="" method="POST" autocomplete="off">
+
+            <form action="" method="POST" autocomplete="off" class="auth-form">
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control futur-input" name="login_admin" placeholder="Votre login" required>
+                    <label class="form-label futur-label" for="loginAdmin">Identifiant</label>
+                    <input
+                        type="text"
+                        class="form-control futur-input"
+                        name="login_admin"
+                        id="loginAdmin"
+                        placeholder="Votre login"
+                        autocomplete="username"
+                        required
+                    >
                 </div>
                 <div class="form-group mb-4">
-                    <input type="password" class="form-control futur-input" name="motdepasse_admin" placeholder="Mot de Passe" required>
+                    <label class="form-label futur-label" for="passwordAdmin">Mot de passe</label>
+                    <input
+                        type="password"
+                        class="form-control futur-input"
+                        name="motdepasse_admin"
+                        id="passwordAdmin"
+                        placeholder="Votre mot de passe"
+                        autocomplete="current-password"
+                        required
+                    >
                 </div>
-                <button type="submit" name="connecter" class="btn futur-btn btn-block w-100">Connexion</button>
+                <button type="submit" name="connecter" class="btn futur-btn w-100">
+                    <i class="fa-solid fa-right-to-bracket me-2"></i>Connexion
+                </button>
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
-
